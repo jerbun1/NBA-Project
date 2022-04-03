@@ -1,0 +1,164 @@
+@use '../component/Player/Player.scss';
+@use  '../component/Team/Team.scss';
+@use '../component/Header/Header.scss';
+@use '../styles/globals.css';
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Zen+Old+Mincho&display=swap');
+
+body{
+    margin:0;
+}
+.title{
+    background: rgb(52,72,134);
+    background: linear-gradient(117deg, rgba(52,72,134,1) 0%, rgba(228,228,237,1) 51%, rgba(215,89,94,1) 100%);
+    width: 20%;
+    margin: auto;
+    border-radius: 10px;
+    opacity: 90%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+.title-logo{
+    display: flex;
+}
+h1, h2{
+    display: flex;
+    color: #006bb7;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quintessential', cursive;
+    padding: 10px;
+}
+.nba-Logo{
+    height: 100px;
+    left: 45%;
+    border-radius: 14%;
+    padding: 14px;
+}
+.lebronJames{
+    position: relative;
+    right: 220px;
+    bottom: -40px;
+    animation: fadeInRight 10s ease-out;
+    opacity: 0;
+    z-index: 0;
+
+}
+
+.kevinDurant{
+    animation: fadeInRight 10s ease-out;
+    left: -400px;
+    position: relative;
+    top: -500px;
+    opacity: 0;
+    z-index: 0;
+
+}
+
+.giannis{
+    width: 650px;
+    height: 650px;
+    position: relative;
+    top: -1200px;
+    left: 650px;
+    animation: fadeInRight 10s ease;
+    opacity: 0;
+    z-index: 0;
+
+}
+.stephCurry{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 1550px;
+    bottom: 450px;
+    animation: fadeInLeft 10s ease;
+    opacity: 0;
+    z-index: 0;
+
+}
+
+.content{
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    display: grid;
+    position: relative;
+    top: -100px;
+    grid-template-rows: 100px;
+    grid-template-columns: 100px 100px;
+    grid-gap: 620px;
+}
+.team-btn_1{
+    border-radius: 50%;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu3pkOtF4quqC10ZZgN6VbPMTq1JNXZXEDcw&usqp=CAU");
+    background-size: cover;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 150px;
+    width: 150px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: cursive;
+}
+.team-btn_2{
+    border-radius: 50%;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu3pkOtF4quqC10ZZgN6VbPMTq1JNXZXEDcw&usqp=CAU");
+    background-size: cover;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 150px;
+    width: 150px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: cursive;
+}
+
+.team-btn_1:hover, .team-btn_2:hover{
+    animation: bounce-5 5s infinite;
+
+}
+
+@keyframes  bounce-5{
+    0%   { transform: scale(1,1)    translateY(0); }
+        10%  { transform: scale(1.1,.9) translateY(0); }
+        30%  { transform: scale(.9,1.1) translateY(-100px); }
+        50%  { transform: scale(1,1)    translateY(0); }
+        57%  { transform: scale(1,1)    translateY(-7px); }
+        64%  { transform: scale(1,1)    translateY(0); }
+        100% { transform: scale(1,1)    translateY(0); }
+}
+
+@keyframes fadeInLeft {
+    0% {
+       opacity: 1;
+       transform: translateX(-90px);
+    }
+    90% {
+       opacity: 0;
+       transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(0);
+     }
+}
+
+@keyframes fadeInRight {
+    0% {
+       opacity: 1;
+       transform: translateX(90px);
+    }
+    90% {
+       opacity: 0;
+       transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(0);
+     }
+}

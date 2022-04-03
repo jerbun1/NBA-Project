@@ -1,0 +1,768 @@
+.team_info {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 90px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  .nbaTeam {
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    border-radius: 100px;
+    &:hover {
+      position: relative;
+      animation: upAndDown 2s linear infinite;
+    }
+    @keyframes upAndDown {
+      0%,
+      100% {
+        bottom: 0;
+      }
+      50% {
+        bottom: 10px;
+      }
+    }
+    .teamInfo {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    &#Hawks {
+      background: url("https://wallpapercave.com/wp/wp8928681.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: black;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: #262124;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Celtics {
+      background: url("https://wallpapercave.com/wp/wp9116387.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .team-assist {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .team-numbers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: #262124;
+        display: flex;
+        justify-content: center;
+      }
+      h4,
+      p {
+        color: rgb(255, 255, 255);
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Nets {
+      background: url("https://wallpapercave.com/dwp1x/wp1909086.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Hornets {
+      background: url("https://wallpapercave.com/wp/wp1955396.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Bulls {
+      background: url("https://wallpapercave.com/dwp1x/wp9706726.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Cavaliers {
+      background: url("https://wallpapercave.com/wp/wp1962510.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Mavericks {
+      // https://wallpapercave.com/wp/wp2012235.jpg
+      background: url("https://wallpapercave.com/wp/wp1918419.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Nuggets {
+      background: url("https://wallpapercave.com/wp/wp2012180.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Pistons {
+      background: url("https://wallpapercave.com/wp/wp1931518.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Warriors {
+      // https://wallpapercave.com/wp/wp2612206.jpg
+      background: url("https://wallpapercave.com/wp/wp1962571.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Rockets {
+      background: url("https://wallpapercave.com/dwp1x/wp1844065.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Pacers {
+      background: url("https://wallpapercave.com/wp/wp1878775.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Clippers {
+      background: url("https://wallpapercave.com/wp/wp1830199.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Lakers {
+      background: url("https://wallpapercave.com/wp/wp8731834.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Grizzlies {
+      background: url("https://wallpapercave.com/wp/wp1884481.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Heat {
+      background: url("https://wallpapercave.com/wp/wp6027902.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Bucks {
+      background: url("https://wallpapercave.com/wp/wp9468821.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Timberwolves {
+      background: url("https://wallpapercave.com/wp/wp3905076.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Pelicans {
+      background: url("https://wallpapercave.com/wp/wp1930957.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Knicks {
+      background: url("https://wallpapercave.com/wp/wp1853854.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Thunder {
+      background: url("https://wallpapercave.com/wp/wp4018454.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Magic {
+      background: url("https://wallpapercave.com/wp/8tUhBKS.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Sixers {
+      background: url("https://wallpapercave.com/wp/wp4264319.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Suns {
+      background: url("https://wallpapercave.com/wp/wp2004645.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Trail#Blazers {
+      background: url("https://wallpapercave.com/wp/wp2015321.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Kings {
+      background: url("https://wallpapercave.com/wp/wp1928709.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Spurs {
+      background: url("https://wallpapercave.com/wp/wp10063844.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Raptors {
+      // https://wallpapercave.com/dwp1x/wp1840187.jpg
+      background: url("https://wallpapercave.com/dwp1x/wp1840219.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Jazz {
+      background: url("https://wallpapercave.com/wp/wp1919103.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &#Wizards {
+      background: url("https://wallpapercave.com/wp/wp1982967.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 300% 100%;
+      .teamRoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      h2,
+      p {
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
