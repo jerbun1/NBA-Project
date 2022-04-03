@@ -62,7 +62,7 @@ const Player = (props) => {
                 </div>
                 <div className="player_Description">
                   <div className="player_Jersey">
-                    <p>Jersey # {item.jersey}</p>
+                    <p>Jersey #/number {item.jersey}</p>
                   </div>
 
                   <div className="player_dimen">
