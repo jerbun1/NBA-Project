@@ -11,7 +11,7 @@ const Team = (props) => {
             .then((res) => {
                 // console.log(res.data.league.standard);
                 let team = res.data.league.standard;
-                // console.log(team);
+                console.log(team);
                 // console.log(team.city);
                 setNbaTeam(team);
             })
