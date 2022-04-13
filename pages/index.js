@@ -19,7 +19,7 @@ export default function Home() {
 
         </div>
    
-        <img className="lebronJames" src="https://i.ibb.co/qRxXqYW/lebron.png" alt="lebron" border="0"/> 
+         
         {/* <img className="stephCurry" src="https://i.ibb.co/LCjSFzN/Steph-Curry.png" alt="Steph-Curry" border="0"/>      
         <img className="kevinDurant" src="https://i.ibb.co/tsznL6T/Kevin-Durant.png" alt="Kevin-Durant" border="0"/>    
         <img className="giannis" src="https://i.ibb.co/XS3TkQX/giannis.png" alt="giannis" border="0"/>        */}

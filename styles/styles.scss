@@ -1,6 +1,6 @@
 @use '../component/Player/Player.scss';
 @use  '../component/Team/Team.scss';
-@use '../component/Header/Header.scss';
+// @use '../component/Header/Header.scss';
 @use '../styles/globals.css';
 @import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Zen+Old+Mincho&display=swap');
 
@@ -24,12 +24,40 @@ body{
     display: flex;
 }
 h1, h2{
-    display: flex;
-    color: #006bb7;
-    justify-content: center;
     align-items: center;
-    font-family: 'Quintessential', cursive;
+    border-radius: 10%;
+    background: linear-gradient(117deg, #344886 0%, #e4e4ed 51%, #d7595e 100%);
+    // color: #006bb7;
+    color: rgb(52,72,134);
+    display: flex;
+    font-family: "Quintessential", cursive;
+    justify-content: center;
+    left: 500px;
+    margin: auto;
     padding: 10px;
+    position: absolute;
+    top: 120px;
+    text-align: center;
+}
+.header{
+   
+    // background: linear-gradient(117deg, #344886 0%, #e4e4ed 51%, #d7595e 100%);
+    background: #07111b;
+    // background: #464c6b;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 40px;
+    p{
+        margin: 15px;
+        color: white;
+    }
+}
+.back-btn{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
 }
 .nba-Logo{
     height: 100px;
@@ -42,9 +70,24 @@ h1, h2{
     right: 220px;
     bottom: -40px;
     animation: fadeInRight 10s ease-out;
-    opacity: 0;
+    // opacity: 0;
     z-index: 0;
+}
 
+.groupPlayers{
+    width: 300px;
+    height: 300px;
+    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/4d5eff110067671.5fe2dc3dd50e1.jpg');
+    background-size: cover;
+}
+.groupPlayers2{
+    width: 541px;
+    height: 300px;
+    background: url('https://imageio.forbes.com/specials-images/imageserve/60105eea27a5e0ffbf1a07e8/0x0.jpg?format=jpg&height=1080&width=1920&fit=crop');
+    background-size: cover;
+    margin-left: 65.8%;
+    position: absolute;
+    top: 0px;
 }
 
 .kevinDurant{

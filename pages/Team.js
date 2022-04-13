@@ -37,9 +37,17 @@ const Team = (props) => {
     console.log(nbaTeam)
     return (
         <div className='nbaTeams'>
-            <Link href='/'>
-                <button>Back</button>
+            
+            <div className='header'>
+            {/* <img className="lebronJames" src="https://i.ibb.co/qRxXqYW/lebron.png" alt="lebron" border="0"/> */}
+            <div className='groupPlayers'/>
+            <Link  href='/'>
+                <button className='back-btn'>Back</button>
             </Link>
+                <h1>NBA <br/>Where Amazing Happens</h1> 
+
+            <div className='groupPlayers2'/>
+            </div>
             <NbaTeam teamID={showStats()}/>
 
         
