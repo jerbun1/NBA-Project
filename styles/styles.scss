@@ -8,22 +8,22 @@ body{
     margin:0;
 }
 .title{
-    background: rgb(52,72,134);
-    background: linear-gradient(117deg, rgba(52,72,134,1) 0%, rgba(228,228,237,1) 51%, rgba(215,89,94,1) 100%);
-    width: 20%;
-    margin: auto;
-    border-radius: 10px;
-    opacity: 90%;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    // background: rgb(52,72,134);
+    // background: linear-gradient(117deg, rgba(52,72,134,1) 0%, rgba(228,228,237,1) 51%, rgba(215,89,94,1) 100%);
+    // width: 20%;
+    // margin: auto;
+    // border-radius: 10px;
+    // opacity: 90%;
+    // display: flex;
+    // align-items: center;
+    // text-align: center;
 
 }
 
 .title-logo{
     display: flex;
 }
-h1, h2{
+.nbaTeamTitle{
     align-items: center;
     border-radius: 10%;
     background: linear-gradient(117deg, #344886 0%, #e4e4ed 51%, #d7595e 100%);
@@ -51,13 +51,58 @@ h1, h2{
         margin: 15px;
         color: white;
     }
+    .bar{
+        background: black;
+        width: 46.9%;
+        display: flex;
+        margin: auto;
+        height: 40px;
+        margin-left: 300px;
+        position: absolute;
+        top: 260px;
+        animation: expandBox 3s ease-in-out;
+        @keyframes expandBox{
+            0% {
+              transform: scale(0);
+            }
+            100% {
+              transform: scale(4);
+            }
+          }
+    }
 }
 .back-btn{
+    border: none;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
+    height: 41px;
+    width: 300px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    &:hover{
+        background: #43568f;
+    }
+}
+.back-btn2{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 442px;
+    height: 41px;
+    width: 300px;
+    background: black;
+    border: none;
+    color:white;
+    cursor: pointer;
+    &:hover{
+        background: #d86066;
+    }
 }
 .nba-Logo{
     height: 100px;
@@ -124,28 +169,41 @@ h1, h2{
 }
 
 .content{
+    display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 0;
-    display: grid;
-    position: relative;
-    top: -100px;
-    grid-template-rows: 100px;
-    grid-template-columns: 100px 100px;
-    grid-gap: 620px;
+    // z-index: 0;
+    // position: relative;
+    // top: 500px;
+    // grid-template-rows: 100px;
+    // grid-template-columns: 100px 100px;
+    // grid-gap: 620px;
+    .gradient-Text{
+        background-image: linear-gradient(117deg, #344886 0%, #e4e4ed 51%, #d7595e 100%);;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+        font-size: 2.6rem;
+        // text-shadow:
+        //     0.07em 0 linear-gradient(117deg, #344886 0%, #e4e4ed 51%, #d7595e 100%),
+        //     0 0.07em linear-gradient(117deg, #344886 0%, #e4e4ed 51%, #d7595e 100%),
+        //     -0.07em 0 linear-gradient(117deg, #344886 0%, #e4e4ed 51%, #d7595e 100%),
+        //     0 -0.07em linear-gradient(117deg, #344886 0%, #e4e4ed 51%, #d7595e 100%);
+    }
 }
 .team-btn_1{
     border-radius: 50%;
     background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu3pkOtF4quqC10ZZgN6VbPMTq1JNXZXEDcw&usqp=CAU");
     background-size: cover;
-    grid-column: 1/2;
-    grid-row: 1/2;
     height: 150px;
     width: 150px;
     color: white;
     font-size: 1.5rem;
     font-weight: 800;
     font-family: cursive;
+    position: relative;
+    left: 300px;
+    bottom: -350px;
 }
 .team-btn_2{
     border-radius: 50%;
@@ -159,6 +217,9 @@ h1, h2{
     font-size: 1.5rem;
     font-weight: 800;
     font-family: cursive;
+    position: relative;
+    left: 1000px;
+    bottom: -350px;
 }
 
 .team-btn_1:hover, .team-btn_2:hover{

@@ -71,20 +71,20 @@ const NbaTeam = (props) => {
        
     // }
     const [columnDefs] = useState([
-        { field: "name"},
-        { field: "nickname" },
-        { field: "abbreviation" },
-        { field: "ppg.avg" },
-        { field: "apg.avg" },
-        { field: "spg.avg" },
-        { field: "bpg.avg" },
-        { field: "eff.avg" },
+        { field: "name", resizable: true},
+        { field: "nickname", resizable: true },
+        { field: "abbreviation", resizable: true },
+        { field: "ppg.avg", resizable: true },
+        { field: "apg.avg", resizable: true },
+        { field: "spg.avg", resizable: true },
+        { field: "bpg.avg", resizable: true },
+        { field: "eff.avg", resizable: true },
         
     ]); 
 
     const rowStyle = {
-        background: 'linear-gradient(117deg, rgba(52,72,134,1) 0%, rgba(228,228,237,1) 51%, rgba(215,89,94,1) 100%)',
-        color: '#04911c'
+        // background: 'linear-gradient(117deg, rgba(52,72,134,1) 0%, rgba(228,228,237,1) 51%, rgba(215,89,94,1) 100%)',
+        color: 'black'
         // cellStyle: params => {
         //     console.log(params)
         //     return {background: 'url("https://wallpapercave.com/wp/wp8928681.jpg")'}
@@ -95,169 +95,169 @@ const NbaTeam = (props) => {
         console.log(params)
         if(params.node.rowIndex == 0) {
             return {background: 'url("https://images5.alphacoders.com/920/920849.jpg")',
-                    backgroundSize: 'contain',
-                color: 'white' };
+                    backgroundSize: '50% 100%',
+                color: '#fefa5d' };
         } 
         else if(params.node.rowIndex == 1) {
             return {background: 'url("https://wallpapercave.com/wp/wp9116387.png")',
-            backgroundSize: 'contain',
-            color: 'white' };
+            backgroundSize: '50% 100%',
+            color: '#fefa5d' };
         } 
         else if(params.node.rowIndex == 2) {
             return {background: 'url("https://wallpapercave.com/wp/wp1962510.jpg")',
-            backgroundSize: 'contain',
-            color: 'white' };
+            backgroundSize: '50% 100%',
+            color: '#fefa5d' };
         }
         else if(params.node.rowIndex == 3) {
             return {background: 'url("https://wallpapercave.com/wp/wp1930957.jpg")',
-            backgroundSize: 'contain',
-            color: 'white' };
+            backgroundSize: '50% 100%',
+            color: '#fefa5d' };
         }
         else if(params.node.rowIndex == 4) {
             return {background: 'url("https://wallpapercave.com/wp/3GqAsTf.jpg")',
-            backgroundSize: 'contain',
-            color: 'white' };
+            backgroundSize: '50% 100%',
+            color: '#fefa5d' };
         }
         else if(params.node.rowIndex == 5) {
             return {background: 'url("https://wallpapercave.com/wp/wp1918419.jpg")',
-            backgroundSize: 'contain',
-            color: 'white' };
+            backgroundSize: '50% 100%',
+            color: '#fefa5d' };
         }
         else if(params.node.rowIndex == 6) {
             return {background: 'url("https://wallpapercave.com/wp/wp2012180.jpg")',
-            backgroundSize: 'contain',
-            color: 'white' };
+            backgroundSize: '50% 100%',
+            color: '#fefa5d' };
         }
         else if(params.node.rowIndex == 7) {
             return {background: 'url("https://wallpapercave.com/wp/wp1962571.jpg")',
-            backgroundSize: 'contain',
-            color: 'white' };
+            backgroundSize: '50% 100%',
+            color: '#fefa5d' };
         }
         else if(params.node.rowIndex == 8) {
             return {background: 'url("https://wallpapercave.com/dwp1x/wp1844065.jpg")',
-            backgroundSize: 'contain',
-            color: 'white' };
+            backgroundSize: '50% 100%',
+            color: '#fefa5d' };
         }
         else if(params.node.rowIndex == 9) {
             return {background: 'url("https://wallpapercave.com/wp/wp5382045.jpg")',
-            backgroundSize: 'contain',
-            color: 'white' };
+            backgroundSize: '50% 100%',
+            color: '#fefa5d' };
         }
         else if(params.node.rowIndex == 10) {
             // https://wallpapercave.com/wp/wp8731834.jpg
             return {background: 'url("https://wallpapercave.com/wp/wp8731850.jpg")',
-            backgroundSize: 'contain',
-            color: 'white' };
+            backgroundSize: '50% 100%',
+            color: '#fefa5d' };
         }
         else if(params.node.rowIndex == 11) {
             return {background: 'url("https://wallpapercave.com/wp/CklhPHc.jpg")',
-            backgroundSize: 'contain',
-            color: 'white' };
+            backgroundSize: '50% 100%',
+            color: '#fefa5d' };
         }
         else if(params.node.rowIndex == 12) {
             return {background: 'url("https://wallpapercave.com/wp/wp9468836.jpg")',
-            backgroundSize: 'contain',
-            color: 'white' };
+            backgroundSize: '50% 100%',
+            color: '#fefa5d' };
         }
         else if(params.node.rowIndex == 13) {
             return {background: 'url("https://wallpapercave.com/wp/wp3905076.jpg")',
-            backgroundSize: 'contain',
-            color: 'white' };
+            backgroundSize: '50% 100%',
+            color: '#fefa5d' };
         }
         else if(params.node.rowIndex == 14) {
             return {background: 'url("https://wallpapercave.com/wp/wp1909079.jpg")',
-            backgroundSize: 'contain',
-            color: 'white',
+            backgroundSize: '50% 100%',
+            color: '#fefa5d',
             fontSize: 'x-larger' };
         }
         else if(params.node.rowIndex == 15) {
             return {background: 'url("https://wallpapercave.com/wp/wp1853854.jpg")',
-            backgroundSize: 'contain',
-            color: 'white',
+            backgroundSize: '50% 100%',
+            color: '#fefa5d',
             fontSize: 'x-larger' };
         }
         else if(params.node.rowIndex == 16) {
             return {background: 'url("https://wallpapercave.com/wp/wdW3Agk.jpg")',
-            backgroundSize: 'contain',
-            color: 'white',
+            backgroundSize: '50% 100%',
+            color: '#fefa5d',
             fontSize: 'x-larger' };
         }
         else if(params.node.rowIndex == 17) {
             return {background: 'url("https://wallpapercave.com/wp/wp1878775.jpg")',
-            backgroundSize: 'contain',
-            color: 'white',
+            backgroundSize: '50% 100%',
+            color: '#fefa5d',
             fontSize: 'x-larger' };
         }
         else if(params.node.rowIndex == 18) {
             return {background: 'url("https://wallpapercave.com/wp/wp4264319.png")',
-            backgroundSize: 'contain',
-            color: 'white',
+            backgroundSize: '50% 100%',
+            color: '#fefa5d',
             fontSize: 'x-larger' };
         }
         else if(params.node.rowIndex == 19) {
             return {background: 'url("https://wallpapercave.com/wp/wp2004645.jpg")',
-            backgroundSize: 'contain',
-            color: 'white',
+            backgroundSize: '50% 100%',
+            color: '#fefa5d',
             fontSize: 'x-larger' };
         }
         else if(params.node.rowIndex == 20) {
             return {background: 'url("https://wallpapercave.com/wp/wp2015321.jpg")',
-            backgroundSize: 'contain',
-            color: 'white',
+            backgroundSize: '50% 100%',
+            color: '#fefa5d',
             fontSize: 'x-larger' };
         }
         else if(params.node.rowIndex == 21) {
             return {background: 'url("https://wallpapercave.com/wp/wp1928709.jpg")',
-            backgroundSize: 'contain',
-            color: 'white',
+            backgroundSize: '50% 100%',
+            color: '#fefa5d',
             fontSize: 'x-larger' };
         }
         else if(params.node.rowIndex == 22) {
             return {background: 'url("https://wallpapercave.com/wp/wp10063844.jpg")',
-            backgroundSize: 'contain',
-            color: 'white',
+            backgroundSize: '50% 100%',
+            color: '#fefa5d',
             fontSize: 'x-larger' };
         }
         else if(params.node.rowIndex == 23) {
             return {background: 'url("https://wallpapercave.com/wp/wp4018454.jpg")',
-            backgroundSize: 'contain',
-            color: 'white',
+            backgroundSize: '50% 100%',
+            color: '#fefa5d',
             fontSize: 'x-larger' };
         }
         else if(params.node.rowIndex == 24) {
             return {background: 'url("https://wallpapercave.com/dwp1x/wp1840219.jpg")',
-            backgroundSize: 'contain',
-            color: 'white',
+            backgroundSize: '50% 100%',
+            color: '#fefa5d',
             fontSize: 'x-larger' };
         }
         else if(params.node.rowIndex == 25) {
             return {background: 'url("https://wallpapercave.com/wp/wp1919103.jpg")',
-            backgroundSize: 'contain',
-            color: 'white',
+            backgroundSize: '50% 100%',
+            color: '#fefa5d',
             fontSize: 'x-larger' };
         }
         else if(params.node.rowIndex == 26) {
             return {background: 'url("https://wallpapercave.com/wp/wp1884481.jpg")',
-            backgroundSize: 'contain',
-            color: 'white',
+            backgroundSize: '50% 100%',
+            color: '#fefa5d',
             fontSize: 'x-larger' };
         }
         else if(params.node.rowIndex == 27) {
             return {background: 'url("https://wallpapercave.com/wp/wp1982967.jpg")',
-            backgroundSize: 'contain',
-            color: 'white',
+            backgroundSize: '50% 100%',
+            color: '#fefa5d',
             fontSize: 'x-larger' };
         }
         else if(params.node.rowIndex == 28) {
             return {background: 'url("https://wallpapercave.com/wp/wp1931518.jpg")',
-            backgroundSize: 'contain',
-            color: 'white',
+            backgroundSize: '50% 100%',
+            color: '#fefa5d',
             fontSize: 'x-larger' };
         }
         else if(params.node.rowIndex == 29) {
             return {background: 'url("https://wallpapercave.com/wp/wp1955396.jpg")',
-            backgroundSize: 'contain',
-            color: 'white',
+            backgroundSize: '50% 100%',
+            color: '#fefa5d',
             fontSize: 'x-larger' };
         }
         
@@ -272,12 +272,11 @@ const NbaTeam = (props) => {
             return(
                 <div className="ag-theme-alpine" style={{ height: 700, width: 1000, margin: 'auto' }} >
                 {/* {teamTable(item.teamId, item.name, item.nickname, item.abbreviation)} */}
-                    <AgGridReact  getRowStyle={getRowStyle} rowHeight={rowHeight} rowData={teams} columnDefs={columnDefs} >
+                    <AgGridReact  getRowStyle={getRowStyle} rowStyle={rowStyle} rowHeight={rowHeight} rowData={teams} columnDefs={columnDefs} >
 
                     </AgGridReact>
-            </div> 
+                </div> 
             )
-            8
             
             // return teamStats.map((item, index) => {
             //     if(item.nickname === "Team Durant" || item.nickname === "Team LeBron" || 

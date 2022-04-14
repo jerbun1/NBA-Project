@@ -11,8 +11,8 @@ export default function Home() {
       {/* <Header/> */}
       <div className='main'>
         <div className='title'>
-          <h1>NBA</h1>
-          <h2>Where Amazing Happens</h2>
+          {/* <h1>NBA</h1>
+          <h2>Where Amazing Happens</h2> */}
           <div className='title-logo'>
             <img className="nba-Logo" src='https://content.sportslogos.net/logos/6/982/full/8147__national_basketball_association-primary-2018.png' alt='NBA Jobe Logo'/>
           </div>
@@ -25,15 +25,19 @@ export default function Home() {
         <img className="giannis" src="https://i.ibb.co/XS3TkQX/giannis.png" alt="giannis" border="0"/>        */}
         
         <div className="content">
-          <Link href='/Team'>
-            <button className="team-btn_1">Teams</button>
-          </Link> 
-          <Link href="/Players">
-            <button className="team-btn_2">Players</button>
-          </Link>
+          <h1 className='gradient-Text'>Basketball 
+          <br />It doesnt produce greatness it reveals it</h1>
+          
         </div>
-        
-        <Footer/>
+        <Link href='/Team'>
+          <button className="team-btn_1">Teams</button>
+        </Link> 
+
+        <Link href="/Players">
+          <button className="team-btn_2">Players</button>
+        </Link>
+
+
 
       </div>
     </div>

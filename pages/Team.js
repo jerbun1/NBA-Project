@@ -40,13 +40,24 @@ const Team = (props) => {
             
             <div className='header'>
             {/* <img className="lebronJames" src="https://i.ibb.co/qRxXqYW/lebron.png" alt="lebron" border="0"/> */}
-            <div className='groupPlayers'/>
-            <Link  href='/'>
-                <button className='back-btn'>Back</button>
-            </Link>
-                <h1>NBA <br/>Where Amazing Happens</h1> 
+            
+            <div className='groupPlayers'/> 
+            
+            <h1 className="nbaTeamTitle">NBA <br/>Where Amazing Happens</h1> 
 
             <div className='groupPlayers2'/>
+
+            <div className='bar'>
+                <Link  href='/'>
+                    <button className='back-btn'>Home</button>
+                </Link>
+                
+                <Link  href='/Players'>
+                    <button className='back-btn2'>Players</button>
+                </Link>
+            </div>
+                   
+
             </div>
             <NbaTeam teamID={showStats()}/>
 
