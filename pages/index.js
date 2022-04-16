@@ -29,13 +29,22 @@ export default function Home() {
           <br />It doesnt produce greatness it reveals it</h1>
           
         </div>
-        <Link href='/Team'>
-          <button className="team-btn_1">Teams</button>
-        </Link> 
-
-        <Link href="/Players">
-          <button className="team-btn_2">Players</button>
-        </Link>
+        <div className='bar'>
+          
+          <div className='slide1'>
+            <Link href='/Team'>
+              <button className="team-btn_1">Teams</button>
+            </Link> 
+          </div>
+          
+          <div className='slide2'>
+            <Link href="/Players">
+              <button className="team-btn_2">Players</button>
+            </Link>
+          </div>
+          
+        </div>
+        
 
 
 

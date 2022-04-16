@@ -3,7 +3,8 @@
 // @use '../component/Header/Header.scss';
 @use '../styles/globals.css';
 @import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Zen+Old+Mincho&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&family=Updock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
 body{
     margin:0;
 }
@@ -51,7 +52,8 @@ body{
         margin: 15px;
         color: white;
     }
-    .bar{
+    
+    .bar2{
         background: black;
         width: 46.9%;
         display: flex;
@@ -70,6 +72,11 @@ body{
             }
           }
     }
+}
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .back-btn{
     border: none;
@@ -135,38 +142,38 @@ body{
     top: 0px;
 }
 
-.kevinDurant{
-    animation: fadeInRight 10s ease-out;
-    left: -400px;
-    position: relative;
-    top: -500px;
-    opacity: 0;
-    z-index: 0;
+// .kevinDurant{
+//     animation: fadeInRight 10s ease-out;
+//     left: -400px;
+//     position: relative;
+//     top: -500px;
+//     opacity: 0;
+//     z-index: 0;
 
-}
+// }
 
-.giannis{
-    width: 650px;
-    height: 650px;
-    position: relative;
-    top: -1200px;
-    left: 650px;
-    animation: fadeInRight 10s ease;
-    opacity: 0;
-    z-index: 0;
+// .giannis{
+//     width: 650px;
+//     height: 650px;
+//     position: relative;
+//     top: -1200px;
+//     left: 650px;
+//     animation: fadeInRight 10s ease;
+//     opacity: 0;
+//     z-index: 0;
 
-}
-.stephCurry{
-    width: 500px;
-    height: 500px;
-    position: relative;
-    left: 1550px;
-    bottom: 450px;
-    animation: fadeInLeft 10s ease;
-    opacity: 0;
-    z-index: 0;
+// }
+// .stephCurry{
+//     width: 500px;
+//     height: 500px;
+//     position: relative;
+//     left: 1550px;
+//     bottom: 450px;
+//     animation: fadeInLeft 10s ease;
+//     opacity: 0;
+//     z-index: 0;
 
-}
+// }
 
 .content{
     display: flex;
@@ -182,7 +189,6 @@ body{
         background-image: linear-gradient(117deg, #344886 0%, #e4e4ed 51%, #d7595e 100%);;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        
         font-size: 2.6rem;
         // text-shadow:
         //     0.07em 0 linear-gradient(117deg, #344886 0%, #e4e4ed 51%, #d7595e 100%),
@@ -191,51 +197,90 @@ body{
         //     0 -0.07em linear-gradient(117deg, #344886 0%, #e4e4ed 51%, #d7595e 100%);
     }
 }
-.team-btn_1{
-    border-radius: 50%;
-    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu3pkOtF4quqC10ZZgN6VbPMTq1JNXZXEDcw&usqp=CAU");
-    background-size: cover;
-    height: 150px;
-    width: 150px;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 800;
-    font-family: cursive;
+
+.slide1{
+    background: url("../img/Teams/league.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 250px;
     position: relative;
-    left: 300px;
-    bottom: -350px;
+    overflow: hidden;
+    &:hover .team-btn_1{
+        animation: slideLeft 0.5s forwards;
+    }
+}
+.team-btn_1{
+    // border-radius: 50%;
+    // background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu3pkOtF4quqC10ZZgN6VbPMTq1JNXZXEDcw&usqp=CAU");
+    height: 250px;
+    width: 100%;
+    background-color: #42548e;
+    font-size: 4.5rem;
+    font-weight: 800;
+    font-family: 'Updock', cursive;
+    position: relative;
+    overflow: hidden;
+    position: absolute;
+    left: -800px;
+    color: black;
+    opacity: 90%;
+    letter-spacing: 10px;
+}
+
+@keyframes slideLeft {
+    100%{
+        left: 0;
+    }
+}
+@keyframes slideRight {
+    100%{
+        right: 0;
+    }
+}
+.slide2{
+    background: url("https://prosportsoutlook.com/wp-content/uploads/2021/10/NBA-75-Greatest.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    &:hover .team-btn_2{
+        animation: slideRight 0.5s forwards;
+    }
 }
 .team-btn_2{
-    border-radius: 50%;
-    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu3pkOtF4quqC10ZZgN6VbPMTq1JNXZXEDcw&usqp=CAU");
-    background-size: cover;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    height: 150px;
-    width: 150px;
-    color: white;
-    font-size: 1.5rem;
+    height: 250px;
+    width: 100%;
+    background-color: #d8646a;
+    font-size: 4.5rem;
     font-weight: 800;
-    font-family: cursive;
+    font-family: 'Updock', cursive;
     position: relative;
-    left: 1000px;
-    bottom: -350px;
+    overflow: hidden;
+    position: absolute;
+    right: -800px;
+    color: black;
+    opacity: 90%;
+    letter-spacing: 10px;
+   
 }
 
-.team-btn_1:hover, .team-btn_2:hover{
-    animation: bounce-5 5s infinite;
+// .team-btn_1:hover, .team-btn_2:hover{
+//     animation: bounce-5 5s infinite;
 
-}
+// }
 
-@keyframes  bounce-5{
-    0%   { transform: scale(1,1)    translateY(0); }
-        10%  { transform: scale(1.1,.9) translateY(0); }
-        30%  { transform: scale(.9,1.1) translateY(-100px); }
-        50%  { transform: scale(1,1)    translateY(0); }
-        57%  { transform: scale(1,1)    translateY(-7px); }
-        64%  { transform: scale(1,1)    translateY(0); }
-        100% { transform: scale(1,1)    translateY(0); }
-}
+// @keyframes  bounce-5{
+//     0%   { transform: scale(1,1)    translateY(0); }
+//         10%  { transform: scale(1.1,.9) translateY(0); }
+//         30%  { transform: scale(.9,1.1) translateY(-100px); }
+//         50%  { transform: scale(1,1)    translateY(0); }
+//         57%  { transform: scale(1,1)    translateY(-7px); }
+//         64%  { transform: scale(1,1)    translateY(0); }
+//         100% { transform: scale(1,1)    translateY(0); }
+// }
 
 @keyframes fadeInLeft {
     0% {

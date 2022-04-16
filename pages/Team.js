@@ -47,7 +47,9 @@ const Team = (props) => {
 
             <div className='groupPlayers2'/>
 
-            <div className='bar'>
+            <div className='bar2'>
+                
+
                 <Link  href='/'>
                     <button className='back-btn'>Home</button>
                 </Link>
